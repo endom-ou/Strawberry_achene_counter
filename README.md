@@ -1,2 +1,2 @@
 # Strawberry_achene_counter
-イチゴ果実のRGB画像から痩果の数および密度を画像解析で概算するWebアプリケーション
+We provide a web application for estimating the number and density of achenes from RGB images of strawberry fruits using image analysis.
