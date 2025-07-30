@@ -60,7 +60,7 @@ python app.py
 
 ## ライセンス
 
-MIT License
+Apache License Version 2.0
 
 ## 作者
 
