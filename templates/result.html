@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>解析結果 - イチゴ種密度解析アプリ (Strawberry Archine Counter)</title>
+    <title>Results - Strawberry Archine Counter</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -107,44 +107,43 @@
 </head>
 <body>
     <div class="container">
-        <h1>🔬 解析結果</h1>
+        <h1>🔬 Results</h1>
         
         <div class="results-grid">
             <div class="image-section">
-                <h3>処理結果画像</h3>
+                <h3>Processed image</h3>
                 {% if filename %}
                     <img src="{{ url_for('static', filename='uploads/result_' + filename) }}" alt="解析結果画像">
                     <p style="text-align: center; color: #6c757d; margin-top: 10px;">
-                        <small>🟢 緑：イチゴ領域 | 🟡 黄：検出された種</small>
+                        <small>🟢 green： detected strawberry fruit area | 🟡 yellow： detected archines</small>
                     </p>
                 {% endif %}
             </div>
             
             <div class="results-section">
-                <h3>測定結果</h3>
+                <h3>Measurement results</h3>
                 
                 <div class="result-item">
-                    <div class="result-label">イチゴ果実の表面積</div>
-                    <div class="result-value">{{ strawberry_area }}<span class="result-unit">cm²</span></div>
+                    <div class="result-label">Strawberry fruit surface area</div>
+                    <div class="result-value">{{ strawberry_area }}<span class="result-unit"> cm²</span></div>
                 </div>
                 
                 <div class="result-item">
-                    <div class="result-label">検出された痩果の数</div>
-                    <div class="result-value">{{ seed_count }}<span class="result-unit">個</span></div>
+                    <div class="result-label">Number of archines</div>
+                    <div class="result-value">{{ seed_count }}<span class="result-unit"> counts</span></div>
                 </div>
                 
                 <div class="result-item">
-                    <div class="result-label">痩果密度</div>
-                    <div class="result-value">{{ seed_density }}<span class="result-unit">個/cm²</span></div>
+                    <div class="result-label">Archine density</div>
+                    <div class="result-value">{{ seed_density }}<span class="result-unit"> counts/cm²</span></div>
                 </div>
                 
-                <a href="{{ url_for('index') }}" class="btn btn-primary">🔄 新しい画像を解析</a>
+                <a href="{{ url_for('index') }}" class="btn btn-primary">🔄 Start new analysis</a>
             </div>
         </div>
         
         <div class="notes">
-            <h4>解析について</h4>
-            <p>この解析結果は画像処理による自動検出に基づいています。撮影条件や画像品質により精度が変わる場合があります。より正確な測定には、均一な照明条件と鮮明な画像をお使いください。</p>
+            <p>This analysis uses automated image processing for detection. Results may vary based on photography conditions and image quality. For the most accurate measurements, we recommend using clear, high-quality images taken under consistent lighting.</p>
         </div>
     </div>
 </body>
