@@ -1,0 +1,2 @@
+# Strawberry_achene_counter
+イチゴ果実のRGB画像から痩果の数および密度を画像解析で概算するWebアプリケーション
