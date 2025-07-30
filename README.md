@@ -64,4 +64,4 @@ Apache License Version 2.0
 
 ## 作者
 
-遠藤みのり（Minori Hikawa-Endo)＠岡山大学学術研究院環境生命自然科学学域
+遠藤みのり（Minori Hikawa-Endo)＠岡山大学学術研究院環境生命自然科学学域　endom@okayama-u.ac.jp
