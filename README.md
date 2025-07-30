@@ -1,67 +1,70 @@
-# イチゴ種密度解析アプリ (Strawberry Archine Counter)
+# Strawberry Archine Counter
 
-イチゴ果実のRGB画像から、痩果の数と密度を概算する簡単なwebアプリです。
+This is a simple web application that estimates the number and density of achenes from RGB images of strawberry fruits.
 
-## 基本的な機能
+## Basic Functions
 
-- イチゴ果実の画像をアップロード
-- 画像解析によるイチゴ果実および痩果の自動検出
-- 痩果密度の算出
-- 1cm角の青いシールまたは紙片（画像内に含めてください！）を基準とするスケール調整
+- Upload images of strawberry fruits
+- Automatic detection of strawberry fruits and achenes through image analysis
+- Calculation of achenes density
+- Scale adjustment based on a 1cm square blue sticker or piece of paper (please include a sticker/paper in the image)
 
-## 必要な環境
+## Requirements
 
-- Python 3.7以上
+- Python 3.7 or higher
 - OpenCV
 - Flask
 - NumPy
 
-## インストール方法
+## Installation
 
-1. リポジトリをクローン
+1. Clone the repository
 ```bash
 git clone https://github.com/yourusername/strawberry-archine-counter.git
 cd strawberry-archine-counter
 ```
 
-2. 依存関係をインストール
+2. Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-3. アプリケーションを起動
+3. Run the application
 ```bash
 python app.py
 ```
 
-4. ブラウザで `http://localhost:5000` にアクセス
+4. Open your browser and go to http://localhost:5000
 
-## 使用方法
+## Usage
 
-1. イチゴと1cm角の青いシールが写った画像を準備
-2. Webアプリ上で解析用画像をアップロード
-3. 解析結果（痩果数、果実表面積、痩果密度）を表示　※果実表面積は果実表面の丸みを考慮しないものであることに注意
-※うまく解析できない場合、果実および痩果検出パラメータを調整してください
+1. Prepare an RGB image showing a strawberry fruit and a 1 cm square blue sticker (or a piece of paper).
+2. Upload the image for analysis to the web application.
+3. Display the analysis results (number of achenes, fruit surface area, and achenes density).
+*Note that the fruit surface area does not take into account the roundness of the fruit surface.
+*In case you are unable to analyze the image properly, please adjust the fruit and achenes detection parameters.  
 
-## 推奨画像要件
+## Recommended Image Requirements
 
-- 対応形式：PNG, JPG, JPEG
-- 最大ファイルサイズ：16MB
-- RGB形式
-- 青色の1cm角シールまたは紙片をスケール基準として配置していること
-- イチゴ果実が明確に写っていること（机の上など、均一な背景で撮影したものが望ましい）
+- Supported formats: PNG, JPG, JPEG
+- Maximum file size: 16MB
+- RGB
+- A blue 1cm square sticker or paper should be placed as a scale reference
+- The strawberry fruit should be clearly visible (preferably photographed on a uniform background such as a desk)
 
-## 技術仕様
+##Technical Specifications
 
-- **バックエンド**: Flask (Python)
-- **画像処理**: OpenCV
-- **色空間変換**: HSV色空間での色検出
-- **形態学的処理**: ノイズ除去とエッジ検出
+- Backend: Flask (Python)
+- Image Processing: OpenCV
+- Color Space Conversion: Color detection in HSV color space
+- Morphological Processing: Noise removal and edge detection
 
-## ライセンス
+## License
 
 Apache License Version 2.0
 
-## 作者
+## Author
 
-遠藤みのり（Minori Hikawa-Endo)＠岡山大学学術研究院環境生命自然科学学域　endom@okayama-u.ac.jp
+遠藤みのり Minori Hikawa-Endo
+Okayama University
+endom@okayama-u.ac.jp
