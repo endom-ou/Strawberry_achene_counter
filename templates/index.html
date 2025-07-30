@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>イチゴ種密度解析アプリ (Strawberry Archine Counter)</title>
+    <title>Strawberry Archine Counter</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -80,9 +80,9 @@
 </head>
 <body>
     <div class="container">
-        <h1>イチゴ種密度解析アプリ (Strawberry Archine Counter)</h1>
+        <h1>Strawberry Archine Counter</h1>
         
-        <!-- フラッシュメッセージの表示 -->
+        <!-- flash message -->
         {% with messages = get_flashed_messages() %}
             {% if messages %}
                 <div class="flash-messages">
@@ -95,28 +95,28 @@
         
         <form method="POST" enctype="multipart/form-data">
             <div class="upload-area">
-                <h3>📸 イチゴの画像をアップロード</h3>
+                <h3>📸 Upload a strawberry image here</h3>
                 <div class="file-input">
                     <input type="file" name="file" accept=".png,.jpg,.jpeg" required>
                 </div>
-                <button type="submit" class="btn">解析開始</button>
+                <button type="submit" class="btn">Start Analysis</button>
             </div>
         </form>
         
         <div class="instructions">
-            <h3>使用方法</h3>
+            <h3>How to use</h3>
             <ul>
-                <li>イチゴと<strong>1cm角の青いシール</strong>が写った画像を準備してください</li>
-                <li>青いシールはスケール基準として使用されます</li>
-                <li>対応形式：PNG, JPG, JPEG（最大16MB）</li>
-                <li>イチゴがはっきりと写っている画像をお使いください</li>
+                <li>Prepare an image showing the strawberry with a <strong>1cm square blue sticker/paper</strong></li>
+                <li>The blue sticker/paper will be used as a scale reference</li>
+                <li>Supported formats: PNG, JPG, JPEG (max 16MB)</li>
+                <li>Please use an image where the strawberry is clearly visible</li>
             </ul>
             
-            <h3>解析内容</h3>
+            <h3>Analysis Details</h3>
             <ul>
-                <li>イチゴ果実の表面積（cm²）　※果実の丸みや凹凸は考慮していません</li>
-                <li>痩果数（個）</li>
-                <li>痩果密度（個/cm²）</li>
+            <li>Strawberry fruit surface area (cm²) *Does not account for fruit curvature or surface irregularities</li>
+            <li>Number of achenes (count)</li>
+            <li>Achene density (count/cm²)</li>
             </ul>
         </div>
     </div>
