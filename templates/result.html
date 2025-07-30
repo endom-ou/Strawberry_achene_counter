@@ -113,7 +113,7 @@
             <div class="image-section">
                 <h3>Processed image</h3>
                 {% if filename %}
-                    <img src="{{ url_for('static', filename='uploads/result_' + filename) }}" alt="解析結果画像">
+                    <img src="{{ url_for('static', filename='uploads/result_' + filename) }}" alt="Processed image">
                     <p style="text-align: center; color: #6c757d; margin-top: 10px;">
                         <small>🟢 green： detected strawberry fruit area | 🟡 yellow： detected archines</small>
                     </p>
