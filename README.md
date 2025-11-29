@@ -1,4 +1,4 @@
-# Strawberry Archine Counter
+# Strawberry Achene Counter
 
 This is a simple web application that estimates the number and density of achenes from RGB images of strawberry fruits.
 
