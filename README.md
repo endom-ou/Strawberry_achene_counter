@@ -20,7 +20,7 @@ This is a simple web application that estimates the number and density of achene
 
 1. Clone the repository
 ```bash
-git clone https://github.com/endom-ou/Strawberry-achene-counter.git
+git clone https://github.com/endom-ou/Strawberry_achene_counter.git
 cd Strawberry-achene-counter
 ```
 
