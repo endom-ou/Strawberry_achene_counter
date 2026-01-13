@@ -11,10 +11,10 @@ This is a simple web application that estimates the number and density of achene
 
 ## Requirements
 
-- Python 3.7 or higher
+- Python 3.13.2
+- NumPy
 - OpenCV
 - Flask
-- NumPy
 
 ## Installation
 
@@ -26,7 +26,10 @@ cd Strawberry-achene-counter
 
 2. Install dependencies
 ```bash
-pip install -r requirements.txt
+pip install numpy
+pip install opencv-python
+pip install Flask
+pip install Werkzeug
 ```
 
 3. Run the application
