@@ -65,6 +65,6 @@ Apache License Version 2.0
 
 ## Author
 
-遠藤みのり Minori Hikawa-Endo
-Okayama University
+遠藤みのり Minori Hikawa-Endo; 
+Okayama University; 
 endom@okayama-u.ac.jp
